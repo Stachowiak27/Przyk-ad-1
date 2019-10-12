@@ -1,0 +1,191 @@
+WSTÊP
+
+Strony WWW tworzone s¹ w jêzyku HTML, zwanym jêzykiem znaczników hipertekstowych (ang. Hyper Text Markup Language). Tworzenie stron WWW polega na wprowadzaniu znaczników w wybranym edytorze, a nastêpnie generowaniu kodów Ÿród³owych w przegl¹darce. Strony WWW mo¿na tworzyæ zarówno w edytorze tekstowym (np. notatnik, edit z DOS'a, Microsoft Word) jak i w edytorze graficznym (np. FrontPage Express, Edytor Znaczników HTML). 
+Przy tworzeniu stron WWW musimy pamiêtaæ o trzech zasadach:
+- wszystkie nazwy, rozszerzenia piszemy zawsze ma³ymi literami;
+- w nazwach plików nie u¿ywamy spacji;
+- nazwy plików piszemy bez polskich liter;
+
+Jak utworzyæ stronê WWW w jêzyku HTML? 
+Aby utworzyæ stronê w jêzyku HTML nale¿y zapisaæ jej kod w postaci znaczników w edytorze tekstowym (np. Notatniku), plik zapisaæ z rozszerzeniem. htm lub. html, 
+a nastêpnie otworzyæ plik w przegl¹darce internetowej.
+
+STRUKTURA PLIKU
+
+Struktura pliku w jêzyku HTML ma nastêpuj¹cy wygl¹d:
+
+<HTML>
+<HEAD>
+<TITLE>
+</TITLE>
+</HEAD>
+
+<BODY>
+</BODY>
+</HTML>
+
+CZÊŒÆ NAG£ÓWKOWA 
+
+Pomiêdzy znacznikami nag³ówkowymi <HEAD> </HEAD> umieszcza siê dodatkowo:
+- <TITLE> Nasza pierwsza strona </TITLE>. Tekst umieszczony pomiêdzy tymi znacznikami bêdzie wyœwietlony na pasku tytu³owym przegl¹darki.
+- <META>, znacznik s³u¿¹cy do definiowania strony kodowej. Nie posiada znacznika zamykaj¹cego.
+
+Znaczenie znacznika META:
+- <META http-equiv="content-type" content="text/html; charset=iso-8859-2"> Znacznik informuj¹cy przegl¹darkê o obs³udze polskich znaków.
+- <META NAME="Keywords" CONTENT="wyrazy"> Znacznik powoduj¹cy szybsze i ³atwiejsze wyszukanie naszej strony w przegl¹darce.
+- <META NAME="Description" CONTENT="opis"> Znacznik wyœwietlaj¹cy "opis" strony po znalezieniu jej przez wyszukiwarkê.
+- <META NAME="Author" CONTENT="dane osoby"> Znacznik informuj¹cy o autorze strony. 
+- <META NAME="Generator" CONTENT="edytor"> Znacznik ten informuje w jakim edytorze zosta³a utworzona strona.
+- <META NAME="Language" CONTENT="pl"> Znacznik informuje w jakim jêzyku zosta³a utworzona strona.
+
+Przyk³ad 1. 
+<HTML> 
+<HEAD> 
+<TITLE> Nasza pierwsza strona </TITLE> 
+<META name="language" content="pl"> 
+</HEAD> 
+<BODY> 
+:
+:
+</BODY> 
+</HTML>
+
+CIA£O
+
+W czêœci <BODY> </BODY> umieszczamy tekst, rysunki i inne obiekty graficzne - wszystko to, co ma pojawiæ siê na stronie. 
+Przyk³adowe u¿ycie znacznika <BODY>:
+1. <body bgcolor="nale¿y podaæ kolor"> zmiana koloru t³a;
+2. <body background="nazwa pliku z rozszerzeniem"> obrazek ustawiony jako t³o;
+3. <body leftmargin="szerokoœæ w pikselach"> ustalenie lewego marginesu; 
+4. <body topmargin="szerokoœæ w pikselach"> ustalenie górnego marginesu;
+5. <body rightmargin="szerokoœæ w pikselach"> ustalenie prawego marginesu;
+
+CZÊSTO U¯YWANE ZNACZNIKI
+
+Pomiêdzy <BODY> </BODY> umieszcza siê ró¿ne znaczniki. Oto niektóre z nich.
+- <P> paragraf </P> 
+- <BR> oznacza przejœcie do nastêpnego wiersza (linii). Nie ma znacznika zamykaj¹cego.
+- <B> pogrubienie </B> 
+- <I> kursywa </I> 
+- <U> podkreœlenie </U> 
+- <STRIKE> przekreœlenie </STRIKE>
+- <MARQUEE> wêdruj¹cy tekst </MARQUEE>
+- <SUP> indeks górny </SUP>
+- <SUB> indeks dolny </SUB>
+- <TT> sta³a szerokoœæ niezale¿na od rzeczywistej szerokoœci czcionki </TT>
+- <BIG> powiêkszenie </BIG>
+- <SMALL> pomniejszenie </SMALL>
+- <CITE> cytat </CITE>
+- <EM> rodzaj pochylenia </EM>
+- <Font> czcionka </FONT> 
+- <Font color="kolor"> tekst </FONT>
+- <Font size="wielkoœæ"> tekst </FONT>
+- <Font face="krój czcionki"> tekst </FONT>
+
+Przyk³ad 2. Wyœwietlenie tekstu o okreœlonym kolorze, kroju i rozmiarze czcionki.
+<Font color="red" face="Tahoma" size="3"> tekst </Font>
+
+GRAFIKA
+
+Chc¹c wstawiæ do strony obrazek, nale¿y u¿yæ znacznika: 
+
+<IMG SRC="nazwa obrazka z rozszerzeniem">
+
+Znacznik ten nie ma znacznika zamykaj¹cego. Zaleca siê, aby pliki graficzne zapisywane by³y jako pliki typu GIF lub JPEG. 
+
+RODZAJ WYRÓWNANIA
+
+ALIGN="left" - wyrównanie do lewej strony 
+ALIGN="right" - wyrównanie do prawej strony 
+ALIGN="center - wyœrodkowanie 
+ALIGN="justify" - wyjustowanie 
+
+Przyk³ad 3 Wstawienie dowolnego rysunku i umieszczenie go na œrodku strony.
+<P Align="center"> <img src="rysunek1.gif">
+
+LINKI, czyli ³¹cza hipertekstowe
+
+Link, inaczej ³¹cze hipertekstowe czy odsy³acz, jest to wyró¿niony w pewien sposób obiekt (tekst, rysunek), po wybraniu którego zostanie otworzony inny dokument. 
+Do tworzenia hiper³¹cza do innego dokumentu s³u¿y nastêpuj¹cy znacznik:
+
+<A HREF="obiekt"> treœæ hiper³¹cza </A>
+
+gdzie obiekt oznacza nazwê lub adres URL pliku, który ma zostaæ otwarty przez przegl¹darkê, a treœæ hiper³¹cza to tekst lub rysunek aktywizuj¹cy hiper³¹cze. 
+
+Przyk³ad 4 
+<A HREF="stronka1.htm"> POWRÓT</A>
+Po klikniêciu na POWRÓT do okna przegl¹darki zostanie za³adowany dokument stronka1.
+
+Przyk³ad 5 
+<A HREF="http://republika.pl/sp45sc"> Wyszukaj</A>
+Po klikniêciu na Wyszukaj w oknie przegl¹darki pojawi siê oficjalna strona Szko³y Podstawowej nr 45 w Sosnowcu.
+
+Przyk³ad 6 
+<A HREF="http://republika.pl/sp45sc"> <IMG SRC="lala.jpg"></A>
+W tym przypadku strona Szko³y Podstawowej nr 45 w Sosnowcu, bêdzie aktywowana po klikniêciu na rysunek lala.jpg.
+
+Przyk³ad 7 U¿ycie opcji TARGET spowoduje, ¿e dokument zostanie wyœwietlony np. w nowym oknie przegl¹darki.
+
+<A HREF="stronka1.htm" TARGET="_blank"></A>
+
+Przyk³ad 8 Tworzenie odsy³acza do poczty elektronicznej (skrzynki e-mail):
+
+<A HREF="mailto:adres@e_mail"> E-mail <A>
+
+Przyk³ad 9 Tworzenie odsy³acza do obrazka:
+
+<A Href="mailto:adres@e_mail"> <IMG SRC="skrzynka.jpg"> </A>
+
+
+TABELE
+
+Tabele u¿ywamy po to, aby odpowiednio pooddzielaæ poszczególne czêœci strony.
+
+Definicja tabeli wygl¹da nastêpuj¹co: <TABLE> </Table>. 
+
+Definicja tabeli z wierszem <TR> </TR> i kolumn¹ <TD> </TD>:
+
+<TABLE> <TR> <TD> </TD> </TR> </TABLE>.
+
+Przyk³ad 10 Przyk³adowa tabela sk³adaj¹ca siê z trzech wierszy i dwóch kolumn:
+
+<TABLE> 
+<tr>
+<td> Kolumna1 w wierszu1 </td> 
+<td> Kolumna2 w wierszu1 </td> 
+</tr> 
+<tr> 
+<td>Kolumna1 w wierszu2 </td> 
+<td>Kolumna2 w wierszu2 </td> 
+</tr>
+<tr> 
+<td>Kolumna1 w wierszu3 </td> 
+<td>Kolumna2 w wierszu3 </td> 
+</tr> 
+</table> 
+
+Dodatkowe mo¿liwoœci tabeli. 
+
+- Parametr BACKGROUND definiuje obrazek, który ma zostaæ umieszczony jako t³o tabeli.
+
+Przyk³ad 11. <TABLE BACKGROUND="tlo.gif">
+
+- Parametr BGCOLOR oznacza kolor t³a tabeli.
+
+Przyk³ad 12. <TABLE BGCOLOR="red">
+
+- Parametr BORDER oznacza obramowanie, natomiast BORDERCOLOR oznacza jej kolor.
+
+Przyk³ad 13. <TABLE BORDER=2 BORDERCOLOR="yellow">
+
+- Parametr CELLPADDING definiuje odstêp pomiêdzy tekstem, a ramk¹ komórki, natomiast parametr CELLSPACING definiuje jej gruboœæ.
+
+Przyk³ad 14. <TABLE CELLPADDING="10" CELLSPACING="5">
+
+- Szerokoœæ tabeli definiujemy poprzez parametr WIDTH, który mo¿e przyjmowaæ wartoœæ wyra¿on¹ w procentach (WIDTH=75%) lub pikselach (WIDTH=400).
+
+Przyk³ad 15. <TABLE WIDTH=400>
+
+PUBLIKACJA STRONY W INTERNECIE
+
+Aby nasza strona by³a dostêpna dla innych nale¿y umieœciæ j¹ na serwerze WWW. Do tego celu najczêœciej wykorzystuje siê protokó³ FTP i odpowiednie oprogramowanie klienta FTP. Przed rozpoczêciem przesy³ania nale¿y zgromadziæ nastêpuj¹ce dane: adres serwera, identyfikator u¿ytkownika oraz has³o dostêpu. 

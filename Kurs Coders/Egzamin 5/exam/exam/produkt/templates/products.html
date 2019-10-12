@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Lista produktów {% endblock %}
+{% block content %}
+<h1> Lista Produktów </h1>
+
+    {% for product in products %}
+    <p> {{ product.name}}</p>
+    <li> Cena:{{ product.price }} zł.</li>
+    <li>  Opis:{{ product.description }}</li>
+    <li> {{ product.added_date}}</li>
+
+    {% endfor %}
+    <a href="/add_product">Dodaj produkt</a>
+    {% endblock %}

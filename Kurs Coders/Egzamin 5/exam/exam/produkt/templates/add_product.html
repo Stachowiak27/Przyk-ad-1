@@ -1,0 +1,9 @@
+ {% extends 'base.html' %}
+{% block title %} Dodaj produkt {% endblock %}
+{% block content %}
+       <form method="POST">
+            {% csrf_token %}
+          <ul> {{ form.as_ul }}
+              <input type="submit" value="Zapisz"></ul>
+       </form>
+{% endblock %}
