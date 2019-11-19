@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="gifts@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
+    <root id="1">
+      <ServerVersion>10.10</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="apka">
+      <ObjectId>17331</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="3" parent="1" name="cinemas_db">
+      <ObjectId>16415</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="exam">
+      <ObjectId>17900</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="exam3">
+      <ObjectId>17134</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="exam5">
+      <ObjectId>18111</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="7" parent="1" name="exercises">
+      <ObjectId>16639</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="8" parent="1" name="exercises_db">
+      <ObjectId>16384</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="9" parent="1" name="exersises">
+      <ObjectId>16638</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="10" parent="1" name="fabryka">
+      <ObjectId>18330</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="11" parent="1" name="football">
+      <ObjectId>16922</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="12" parent="1" name="gift">
+      <ObjectId>18690</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="13" parent="1" name="gifts">
+      <ObjectId>18691</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>115</IntrospectionStateNumber>
+      <Current>1</Current>
+    </database>
+    <database id="14" parent="1" name="postgres">
+      <ObjectId>13055</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="15" parent="1" name="python_module5">
+      <ObjectId>17556</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="16" parent="1" name="rest_server">
+      <ObjectId>17332</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="17" parent="1" name="rezerwacja">
+      <ObjectId>17135</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="18" parent="1" name="shop_1">
+      <ObjectId>16454</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="19" parent="1" name="strona_1">
+      <ObjectId>17330</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="20" parent="1" name="warsztaty_rest">
+      <ObjectId>17555</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="21" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="22" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="23" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="24" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="25" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="26" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+  </database-model>
+</dataSource>
